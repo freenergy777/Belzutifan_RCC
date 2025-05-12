@@ -7,20 +7,18 @@ import numpy as np
 print(np.__version__) # must be 1.21.0
 
 from dask.diagnostics import ProgressBar
-
 from arboreto.utils import load_tf_names
 from arboreto.algo import grnboost2
-
 from ctxcore.rnkdb import FeatherRankingDatabase as RankingDatabase
 from pyscenic.utils import modules_from_adjacencies, load_motifs
 from pyscenic.prune import prune2df, df2regulons
 from pyscenic.aucell import aucell
-
 from matplotlib import cm
 from matplotlib.colors import Normalize, to_hex
 
 import seaborn as sns
 
+# designate data location
 DATA_FOLDER = "/home/hjlee/monocle3,pyscenic,palantir,iqcell/2025.05.belzutifan/DATA_FOLDER"
 RESOURCES_FOLDER = "/home/hjlee/monocle3,pyscenic,palantir,iqcell/RESOURCES_FOLDER"
 DATABASE_FOLDER = "/home/hjlee/monocle3,pyscenic,palantir,iqcell/DATABASE_FOLDER"
@@ -36,7 +34,6 @@ MOTIFS_FNAME = os.path.join(DATA_FOLDER, "20250508_motifs_all_gene.csv") # for s
 ex_matrix = pd.read_csv(SC_EXP_FNAME, header=0, index_col=0).T # for making cell (row) and gene (column)
 ex_matrix.shape 
 tf_names = load_tf_names(MM_TFS_FNAME)
-
 
 db_fnames = glob.glob(DATABASES_GLOB)
 def name(fname):
