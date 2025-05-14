@@ -8,4 +8,4 @@ We used single-cell RNA-seq (scRNA-seq) data (GSE269826_Cultured.rds.gz) from [G
 # Repository Structure
 -`scRNA_data_processing_1.R` : Data pre-processing, normalization, dimensionality reduction, clustering, and differential expression after pseudo-time trajectory 
 
--`scRNA_data_TF_GRN_inference.py` : Transcription factors (TFs) and their target genes, together defining a regulon, are derived using gene inference methods which solely rely on correlations between expression of genes across cells. These regulons are refined by pruning targets that do not have an enrichment for a corresponding motif of the TF effectively separating direct from indirect targets based on the presence of cis-regulatory footprints.
+-`scRNA_data_TF_GRN_inference.py` : Regulon activity inference after pruning, visualize regulon activity along pseudo-time
