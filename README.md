@@ -9,3 +9,5 @@ We used single-cell RNA-seq (scRNA-seq) data (GSE269826_Cultured.rds.gz) from [G
 -`scRNA_data_processing_1.R` : Data pre-processing, normalization, dimensionality reduction, clustering, and differential expression after pseudo-time trajectory 
 
 -`scRNA_data_TF_GRN_inference.py` : Regulon activity inference after pruning, visualize regulon activity along pseudo-time
+
+- `belzutifan_RCC_V1.pdf` : Visualized result data
