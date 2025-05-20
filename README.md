@@ -3,7 +3,7 @@ Patients with von Hippel–Lindau (VHL) disease are highly susceptible to renal 
 
 # Motivation
 
-We used single-cell RNA-seq (scRNA-seq) data (GSE269826_Cultured.rds.gz) from [GEO](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE269826) to investigate transcriptional changes induced by belzutifan treatment. By integrating both scRNA-seq and bulk data, we aim to characterize the cellular and molecular consequences of HIF-2α inhibition and gain deeper insight into VHL-associated biological processes in renal cell carcinoma.
+We used single-cell RNA-seq (scRNA-seq) data (GSE269826_Cultured.rds.gz) from [GEO](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE269826) to investigate transcriptional changes induced by belzutifan treatment. We aim to characterize the cellular and molecular consequences of HIF-2α inhibition and gain deeper insight into VHL-associated biological processes in renal cell carcinoma.
 
 # Repository Structure
 -`scRNA_data_processing_1.R` : Data pre-processing, normalization, dimensionality reduction, clustering, and differential expression after pseudo-time trajectory 
